@@ -22,7 +22,7 @@ const Header = () => {
             </div>
             <div onClick={() => setOpen(!open)} className='lg:hidden md:hidden block'>
                 {
-                    open ? <XMarkIcon className='w-9 h-8 text-red-500 font-bold'></XMarkIcon> : <Bars3Icon className='w-9 h-8 text-red-500 font-bold'></Bars3Icon>
+                    open ? <XMarkIcon className='w-9 h-8 text-slate-100 font-bold'></XMarkIcon> : <Bars3Icon className='w-9 h-8 text-slate-100 font-bold'></Bars3Icon>
                 }
 
             </div>
