@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #000000;
 }
 
 .App-logo {
@@ -7,6 +8,10 @@
   pointer-events: none;
 }
 
+.banner-bg{
+  background-color: #111827;
+
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +19,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1d1f23;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
