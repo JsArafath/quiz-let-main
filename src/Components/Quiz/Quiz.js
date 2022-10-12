@@ -40,7 +40,7 @@ const Quiz = () => {
 
         }
     }
-    const hintsHandler = (correctAnswer) => {
+    const hintsshow = (correctAnswer) => {
         toast.info(`Answer: ${correctAnswer}`, { autoClose: 1000 })
     }
     return (
@@ -58,11 +58,11 @@ const Quiz = () => {
                             <p className='bg-slate-500 py-3 rounded-md bg-opacity-70 border-b-2 px-6'>{item.question.replace('<p>', '').replace('</p>', '')}</p>
                                 <div className='grid md:grid-cols-2 grid-cols-1 gap-4 my-3'>
                                     {
-                                        item.options.map(option => <li key={option} onClick={() => answerHandler(option, item.correctAnswer, item.id)} className='bg-slate-300 py-1 px-4 w-3/4 rounded hover:bg-blue-500 hover:text-white ease-in duration-300 cursor-pointer'>{option}</li>)
+                                        item.options.map(option => <li key={option} onClick={() => answerHandler(option, item.correctAnswer, item.id)} className='modify bg-slate-900 text-slate-100 py-1 px-4 w-3/4 rounded hover:bg-blue-500 hover:text-white ease-in duration-300 cursor-pointer'>{option}</li>)
                                     }
                                 
                                 </div>
-                            <EyeIcon onClick={() => hintsHandler(item.correctAnswer)} title='Click to know Answer' className='hover:text-slate-800 duration-300 text-slate-600 h-7 w-6 absolute lg:top-8 lg:right-9 bottom-0 right-2 cursor-pointer' />
+                            <EyeIcon onClick={() => hintsshow(item.correctAnswer)} title='Click to know Answer' className='duration-300 text-slate-50 h-7 w-6 absolute lg:top-8 lg:right-9 md:top-6  right-2 cursor-pointer' />
                         </div>
                     )
                 }
