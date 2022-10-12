@@ -53,8 +53,8 @@ const Quiz = () => {
             <div>
                 {
                     questions.map(item =>
-                        <div className='bg-gray-200 md:w-3/4 sm:w-full rounded-md 
-                        lg:p-5 md:p-3 sm:p-2 p-2 my-4 mx-auto relative' key={item.id}>
+                        <div className=' bg-gray-700 md:w-3/4 sm:w-full lg:w-full rounded-md 
+                        lg:p-5 md:p-3 sm:p-2 p-2 my-4 mx-[-10px] relative' key={item.id}>
                             <p className='bg-slate-500 py-3 rounded-md bg-opacity-70 border-b-2 px-6'>{item.question.replace('<p>', '').replace('</p>', '')}</p>
                                 <div className='grid md:grid-cols-2 grid-cols-1 gap-4 my-3'>
                                     {
