@@ -46,7 +46,7 @@ const Quiz = () => {
     }
     return (
         <div className='bg-slate-900 mt-4 lg:mx-20 md:mx-16 sm:mx-8 mx-4 lg:p-10 md:p-6 sm:p-3 p-2  rounded-md'>
-            <p className='bg-blue-500 w-1/2 font-normal mx-auto text-center text-3xl 
+            <p className='bg-slate-700 w-1/2 font-normal mx-auto text-center text-3xl 
             shadow-lg p-1 px-4 rounded-md text-white mb-7'>{itemsData.name}</p>
             <div className=''>
                 <p className=' text-center py-1 px-3 bg-gray-900 rounded shadow-lg
