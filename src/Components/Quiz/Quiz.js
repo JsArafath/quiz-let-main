@@ -58,13 +58,13 @@ const Quiz = () => {
             <div>
                 {
                     questions.map(item =>
-                        <div className=' bg-gray-700 md:w-3/4 sm:w-full lg:w-full rounded-md 
+                        <div className=' bg-gray-900 md:w-3/4 sm:w-full lg:w-full rounded-md 
                         lg:p-5 md:p-3 sm:p-2 p-2 my-4 mx-[-10px] relative' key={item.id}>
 
                             <p className='text-slate-50 text-center text-lg bg-slate-500 py-3 rounded-md bg-opacity-70 border-b-2 px-6'>{item.question.replace('<p>', '').replace('</p>', '')}</p>
                                 <div className='grid md:grid-cols-2 grid-cols-1 gap-4 my-3'>
                                     {
-                                        item.options.map(option => <li key={option} onClick={() => answerHandler(option, item.correctAnswer, item.id)} className='modify bg-slate-900 text-slate-100 py-1 px-4 w-3/4 rounded hover:bg-blue-500 hover:text-white ease-in duration-300 cursor-pointer'>{option}</li>)
+                                        item.options.map(option => <li key={option} onClick={() => answerHandler(option, item.correctAnswer, item.id)} className='modify bg-slate-700 text-slate-100 py-1 px-4 w-3/4 rounded hover:bg-blue-500 hover:text-white ease-in duration-300 cursor-pointer'>{option}</li>)
                                     }
                                 
                                 </div>
