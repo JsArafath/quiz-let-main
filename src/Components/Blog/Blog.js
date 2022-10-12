@@ -29,14 +29,10 @@ const Blog = () => {
       </div>
       <div className="max-w-[900px] mx-auto mt-16 mb-24">
         <h1 className="bg-slate-700 text-3xl mb-4 text-[#69c0ff] font-semibold p-5 rounded ">
-          3 Explain useRef hook.
+          3 What is useRef hook and how does it work?.
         </h1>
         <p className="text-xl text-[#b5c8d6] mb-4">
-          When we need to get a reference of a DOM element we use the useRef
-          hook. To get a dom element and to manipulate it we need to get the
-          element first, in react we can get this reference by using useRef
-          hook. useRef returns an object. In the object, there will be a current
-          property where the reference is stored. We can also use it as a
+        The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly. We can also use it as a
           variable like a state. But the difference is the component will not
           render when its value changes.
         </p>
