@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { EyeIcon } from '@heroicons/react/24/solid';
 import { toast } from 'react-toastify';
+import { EyeIcon } from '@heroicons/react/24/solid';
+
 import './Quiz.css'
 
 const Quiz = () => {
@@ -45,24 +46,29 @@ const Quiz = () => {
     }
     return (
         <div className='bg-slate-900 mt-4 lg:mx-20 md:mx-16 sm:mx-8 mx-4 lg:p-10 md:p-6 sm:p-3 p-2  rounded-md'>
-            <p className='bg-blue-500 w-1/2 font-normal mx-auto text-center text-3xl shadow-lg p-1 px-4 rounded-md text-white mb-7'>{itemsData.name}</p>
-            <div className='flex gap-5 md:w-3/4 w-full mx-auto md:flex-row flex-col'>
-                <p className='part-1 text-center py-1 px-3 bg-gray-100 rounded mx-[60px] text-green-600 md:w-1/2 w-full  font-semibold text-md'>Total Correct Answer: {correct}</p>
-                {/* <p className='text-center py-1 px-3 bg-stone-100 rounded shadow-lg shadow-gray-400 text-red-600 md:w-1/2 w-full font-semibold text-md'>Total Wrong answer: {wrong}</p> */}
+            <p className='bg-blue-500 w-1/2 font-normal mx-auto text-center text-3xl 
+            shadow-lg p-1 px-4 rounded-md text-white mb-7'>{itemsData.name}</p>
+            <div className=''>
+                <p className=' text-center py-1 px-3 bg-gray-900 rounded shadow-lg
+                 text-green-600 md:w-1/2 w-full  font-semibold text-md'>
+                    Total Correct Answer: {correct}
+                </p>
+            
             </div>
             <div>
                 {
                     questions.map(item =>
                         <div className=' bg-gray-700 md:w-3/4 sm:w-full lg:w-full rounded-md 
                         lg:p-5 md:p-3 sm:p-2 p-2 my-4 mx-[-10px] relative' key={item.id}>
-                            <p className='bg-slate-500 py-3 rounded-md bg-opacity-70 border-b-2 px-6'>{item.question.replace('<p>', '').replace('</p>', '')}</p>
+
+                            <p className='text-slate-50 text-center text-lg bg-slate-500 py-3 rounded-md bg-opacity-70 border-b-2 px-6'>{item.question.replace('<p>', '').replace('</p>', '')}</p>
                                 <div className='grid md:grid-cols-2 grid-cols-1 gap-4 my-3'>
                                     {
                                         item.options.map(option => <li key={option} onClick={() => answerHandler(option, item.correctAnswer, item.id)} className='modify bg-slate-900 text-slate-100 py-1 px-4 w-3/4 rounded hover:bg-blue-500 hover:text-white ease-in duration-300 cursor-pointer'>{option}</li>)
                                     }
                                 
                                 </div>
-                            <EyeIcon onClick={() => hintsshow(item.correctAnswer)} title='Click to know Answer' className='duration-300 text-slate-50 h-7 w-6 absolute lg:top-8 lg:right-9 md:top-6  right-2 cursor-pointer' />
+                            <EyeIcon onClick={() => hintsshow(item.correctAnswer)} title='Click to know Answer' className='duration-300 text-slate-50 h-7 w-6 absolute lg:top-8 lg:right-9 md:top-6 sm:bottom-[50px] right-2 cursor-pointer' />
                         </div>
                     )
                 }
