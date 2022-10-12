@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { ItemsContext } from '../Layout/Layout';
 
-const Charts = () => {
+const Statistics = () => {
     const data = useContext(ItemsContext)
     return (
         <div style={{ width: '60%', height: 400 }} className='my-20 mx-auto text-slate-500'>
@@ -27,4 +27,4 @@ const Charts = () => {
     );
 };
 
-export default Charts;
+export default Statistics;

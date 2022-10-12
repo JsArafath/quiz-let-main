@@ -5,7 +5,7 @@ import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Home from './Components/Home/Home';
 import Layout from './Components/Layout/Layout';
 import Quiz from './Components/Quiz/Quiz';
-import Charts from './Components/Charts/Charts';
+import Statistics from './Components/Statistics/Statistics';
 const router = createBrowserRouter([
   {
     path:'/',
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/statistics',
-        element: <Charts></Charts>
+        element: <Statistics></Statistics>
       },
       {
         path: '/blog',
