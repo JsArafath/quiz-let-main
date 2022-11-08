@@ -15,7 +15,7 @@
 
 ## Installation
 
-```bash
+````bash
 # Clone this repository
 $ git clone https://github.com/JsArafath/firebase-authentication.git
 
@@ -27,7 +27,7 @@ $ npm install
 
 #Start's development server
 $ npm start
-```
+``` 
 
 
 
