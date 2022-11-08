@@ -4,13 +4,13 @@
 <h1 align="center">quiz-let-main</h1>
 
 <p align="center">
-    <a href="[https://.netlify.app](https://lambent-cajeta-92c4d4.netlify.app/)"></a>
+    <a href="[https://lambent-cajeta-92c4d4.netlify.app/](https://lambent-cajeta-92c4d4.netlify.app/)"></a>
     <a href="https://reactjs.org/"></a>
 </p>
 
 ## Site
 
-([https://.netlify.app](https://lambent-cajeta-92c4d4.netlify.app/))
+([https://lambent-cajeta-92c4d4.netlify.app/](https://lambent-cajeta-92c4d4.netlify.app/))
 
 
 ## Installation
