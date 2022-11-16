@@ -1,7 +1,7 @@
 <p align="center">
     <a href="https://lambent-cajeta-92c4d4.netlify.app/" target="_blank"></a>
 </p>
-<h1 align="center">quiz-let-main</h1>
+<h1 align="center">Quiz-let-main</h1>
 
 <p align="center">
     <a href="[https://lambent-cajeta-92c4d4.netlify.app/](https://lambent-cajeta-92c4d4.netlify.app/)"></a>
@@ -27,7 +27,7 @@ $ npm install
 
 #Start's development server
 $ npm start
-``` 
+
 
 
 
